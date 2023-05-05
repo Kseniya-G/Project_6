@@ -3,6 +3,16 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+
+import os
+
+csv_path = "/Users/kseniyagormash/Project_6/processed_vehicles_us.csv"
+
+if os.path.isfile(csv_path):
+    print("CSV file exists!")
+else:
+    print("CSV file does not exist!")
+    
 # loading dataset
 df = pd.read_csv("/Users/kseniyagormash/Project_6/processed_vehicles_us.csv")
        
