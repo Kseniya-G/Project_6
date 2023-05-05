@@ -1,17 +1,19 @@
 # Project_6
 Practicum
 
-This project is to:  * make basic analisis of the data stored in `'vehicles_us.csv'`, 
-                     * to create python virtual environments amd manage it,
-                     * to develope a web application and deploy it to a cloud service that will make it accessible to the public.
+This project is to: 
+* make basic analisis of the data stored in `'vehicles_us.csv'`, 
+* to create python virtual environments amd manage it,
+* to develope a web application and deploy it to a cloud service that will make it accessible to the public.
                      
  
  
 Web application can be reached by https://project-6.onrender.com/
 
 
-Used: * GitHub,
-      * VS Code,
-      * Python,
-      * Python packages - pandas, streamlit, plotly_express,
-      * Render.
+Used:
+* GitHub,
+* VS Code,
+* Python,
+* Python packages - pandas, streamlit, plotly_express,
+* Render.
