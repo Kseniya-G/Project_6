@@ -63,11 +63,15 @@ st.plotly_chart(fig1)
 st.write("""
 ###### Price by mileage and days listed
 """)
-# histogram of price depending on odometer and days_listed
+# scatter plot of price depending on odometer and days_listed
+
 # importing numpy library
 import numpy as np
-# filter out rows with unknown values in the chosen parameter
-filtered_df = filtered_df[filtered_df[choice_of_param_2] != 'unknown']
+# replacing "unknown" values in the "odometer" column with NaN
+filtered_df['odometer'] = filtered_df['odometer'].replace('unknown', np.nan)
+# Remove rows with missing values (if any)
+filtered_df = filtered_df.dropna()
+
 # creating list of parameters
 list_of_param_2=['odometer','days_listed']
 # creating selectbox to choose the parameter for scatter plot
