@@ -4,8 +4,7 @@ import streamlit as st
 import plotly.express as px
 
 # loading dataset
-df = pd.read_csv("/Users/kseniyagormash/Documents/GitHub/Project_6/processed_vehicles_us.csv")
-##/Users/kseniyagormash/Project_6/processed_vehicles_us.csv")
+df = pd.read_csv("/Users/kseniyagormash/Project_6/processed_vehicles_us.csv")
        
 # creating header with checkbox
 st.header('Market of used cars. Processed data')
