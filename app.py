@@ -27,7 +27,7 @@ made_choice = st.selectbox('Select model:', model_choice)
 
 # year range for slider
 min_year = 1900
-max_year = df['year'].astype(int).max()
+max_year = int(df['year'].max())
 year_range = st.slider(
      "Choose year",
      value = (min_year,max_year), min_value=min_year, max_value=max_year )
