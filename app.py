@@ -27,13 +27,13 @@ made_choice = st.selectbox('Select model:', model_choice)
 
 # year range for slider
 min_year = 1900
-max_year = df['year'].max()
+max_year = df['year'].astype(int).max()
 year_range = st.slider(
      "Choose year",
      value = (min_year,max_year), min_value=min_year, max_value=max_year )
 
 # creating list of years
-actual_range=list(range(int(year_range[0]), int(year_range[1]+1)))
+actual_range=list(range(year_range[0], year_range[1]+1))
 
 # filtering data with picked parameters and showing 5 first rows of filtered table 
 filtered_df=df[(df.model==made_choice)&(df.year.isin(list(actual_range)))]
