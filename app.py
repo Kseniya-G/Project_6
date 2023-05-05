@@ -3,18 +3,9 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-
-import os
-
-csv_path = "/Users/kseniyagormash/Project_6/processed_vehicles_us.csv"
-
-if os.path.isfile(csv_path):
-    print("CSV file exists!")
-else:
-    print("CSV file does not exist!")
     
 # loading dataset
-df = pd.read_csv("/Users/kseniyagormash/Project_6/processed_vehicles_us.csv")
+df = pd.read_csv("./processed_vehicles_us.csv")
        
 # creating header with checkbox
 st.header('Market of used cars. Processed data')
@@ -86,6 +77,7 @@ fig2.update_layout(title="<b> Price vs {}</b>".format(choice_of_param_2))
 fig2.update_xaxes(range=[0, 50_000])
 # displaing the plot
 st.plotly_chart(fig2)
+
 
 
 #streamlit run app.py
