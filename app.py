@@ -67,10 +67,12 @@ st.write("""
 
 # importing numpy library
 import numpy as np
-# replacing "unknown" values in the "odometer" column with NaN
+# replacing "unknown" values in the "odometer" column with Na
 filtered_df['odometer'] = filtered_df['odometer'].replace('unknown', np.nan)
-# Remove rows with missing values (if any)
+# removing rows with missing values
 filtered_df = filtered_df.dropna()
+# changing data type in "odometer" to integer
+filtered_df['odometer'] = int(filtered_df['odometer'])
 
 # creating list of parameters
 list_of_param_2=['odometer','days_listed']
