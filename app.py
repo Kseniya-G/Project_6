@@ -72,8 +72,7 @@ filtered_df['odometer'] = filtered_df['odometer'].replace('unknown', np.nan)
 # removing rows with missing values
 filtered_df = filtered_df.dropna()
 # changing data type in "odometer" to integer
-filtered_df['odometer'] = int(filtered_df['odometer'])
-
+filtered_df['odometer'] = filtered_df['odometer'].astype(float).astype(int)
 # creating list of parameters
 list_of_param_2=['odometer','days_listed']
 # creating selectbox to choose the parameter for scatter plot
