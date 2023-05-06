@@ -10,6 +10,7 @@ This project is to:
  
 Web application can be reached by https://project-6.onrender.com/
 
+To run the app locally, navigate to the Project_6 directory in your terminal and run the command `'streamlit run app.py'`.
 
 Used:
 * GitHub,
