@@ -27,7 +27,7 @@ made_choice = st.selectbox('Select model:', model_choice)
 
 # year range for slider
 min_year = 1900
-max_year = df['year'].max()
+max_year = int(df['year'].max())
 year_range = st.slider(
      "Choose year",
      value = (min_year,max_year), min_value=min_year, max_value=max_year )
@@ -67,7 +67,7 @@ st.write("""
 # scatter plot of price depending on odometer and days_listed
 
 # changing data type in "odometer" to integer
-#filtered_df['odometer'] = filtered_df['odometer'].astype(float).astype(int)
+filtered_df['odometer'] = filtered_df['odometer'].astype(float).astype(int)
 # creating list of parameters
 list_of_param_2=['odometer','days_listed']
 # creating selectbox to choose the parameter for scatter plot
