@@ -2,7 +2,7 @@
 Practicum
 
 This project is to: 
-* make basic analisis of the data stored in `'vehicles_us.csv'`, 
+* make basic analysis of the data stored in `'vehicles_us.csv'`, 
 * to create python virtual environments amd manage it,
 * to develope a web application and deploy it to a cloud service that will make it accessible to the public.
                      
